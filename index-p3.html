@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rainbow Colors</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+    background: #1e1d1d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand img {
+    max-width: 180px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    background: rgba(0,0,0,0.6);
+    padding: 25px 40px;
+    font-size: 34px;
+    font-weight: 700;
+    border-left: 5px solid #abd831;
+    animation: slide 2s ease;
+}
+
+@keyframes slide {
+    from {opacity: 0; transform: translateY(-100px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.about {
+    background: black;
+    padding: 80px 0;
+}
+
+.about h1 {
+    color: #abd831;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.about-text {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: textIn 2s ease forwards;
+}
+
+.about-img {
+    opacity: 0;
+    transform: translateX(200px);
+    animation: imgIn 2s ease forwards;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@keyframes textIn {
+    to {opacity:1; transform: translateX(0);}
+}
+
+@keyframes imgIn {
+    to {opacity:1; transform: translateX(0);}
+}
+
+.line {
+    background: #9069aa;
+    padding: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.services {
+    background: black;
+    padding: 80px 0;
+}
+
+.service-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.service-card h4 {
+    color: #abd831;
+    margin-top: 15px;
+}
+
+.feature {
+    background: black;
+    padding: 80px 0;
+}
+
+.feature p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.industry {
+    background: #111;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.industry img {
+    width: 90px;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+.industry img:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    background: black;
+    padding: 60px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 8px;
+}
+
+@media(max-width: 768px) {
+    .hero img {
+        height: 50vh;
+    }
+    .hero-text {
+        font-size: 16px;
+        padding: 15px 20px;
+        left: 5%;
+        right: 5%;
+        bottom: 30%;
+    }
+    .feature p {
+        font-size: 16px;
+    }
+    .industry img {
+        width: 60px;
+        margin: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Logo -->
+<div class="container text-center my-4">
+    <div class="col-md-4 mx-auto">
+        <img src="Rainbow-Vector-Logo-1.png" class="img-fluid" alt="Logo">
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <img src="main.png" class="img-fluid" alt="Hero Image">
+    <div class="hero-text text-center text-lg-start">
+        SOLUTIONS FOR EVERY COLOR UNDER THE RAINBOW
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 about-text text-center text-lg-start mb-4 mb-lg-0">
+                <h1>ABOUT OUR MISSION</h1>
+                <p>Rainbow Colors, Inc. takes pride in its commitment to producing quality colorants while providing unmatched customer support.</p>
+                <p>We believe in open communication with our customers and vendors to ensure alignment with their strategy and improve our techniques.</p>
+            </div>
+            <div class="col-lg-5 about-img text-center">
+                <img src="about-r.png" class="img-fluid" alt="About Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="line">
+    <h2>COLORS ARE OUR SPECIALTY</h2>
+</div>
+
+<!-- Services Section -->
+<section class="services">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="s11.png" class="img-fluid" alt="Service 1">
+                    <h4>Concentrate / Masterbatch</h4>
+                    <p>Pellet form colorant extruded with finest quality developed by our technical team.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="s22.png" class="img-fluid" alt="Service 2">
+                    <h4>Dry Color</h4>
+                    <p>Powder form mixed to meet your needs with flexible packaging options.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="s33.jpg" class="img-fluid" alt="Service 3">
+                    <h4>Color Matches</h4>
+                    <p>Our technical team ensures formulations provide smooth processing and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="line">
+    <h2>Rainbow Colors has the full spectrum of quality products</h2>
+</div>
+
+<!-- Features Section -->
+<section class="feature">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                <img src="left.png" class="img-fluid" alt="Feature Image">
+            </div>
+            <div class="col-lg-7">
+                <p>✓ ON TIME DELIVERIES</p>
+                <p>✓ QUICK TURNAROUND TIMES</p>
+                <p>✓ QUALITY PRODUCTS</p>
+                <p>✓ SUPERIOR CUSTOMER SERVICE</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Section -->
+<section class="industry">
+    <div class="container">
+        <h2 class="mb-4">INDUSTRIES WE SERVE</h2>
+        <img src="i1.png" class="img-fluid" alt="Industry 1">
+        <img src="i2.png" class="img-fluid" alt="Industry 2">
+        <img src="i3.png" class="img-fluid" alt="Industry 3">
+        <img src="i4.png" class="img-fluid" alt="Industry 4">
+        <img src="i5.png" class="img-fluid" alt="Industry 5">
+        <img src="i6.png" class="img-fluid" alt="Industry 6">
+        <img src="i7.png" class="img-fluid" alt="Industry 7">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center text-lg-start">
+            <div class="col-md-4 mb-4">
+                <img src="footer.png" class="img-fluid" alt="Footer Image">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="Rainbow-Vector-Logo-1.png" class="mb-3 text-center" style="max-width:150px;" alt="Logo">
+                <p>340 Renner Dr.</p>
+                <p>Elgin, IL. 60123</p>
+                <p>(847) 640-7700</p>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.google.com/maps?q=340%20renner%20dr%2C%20elgin%2C%20il%2C%2060123&output=embed"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

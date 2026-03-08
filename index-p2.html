@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style-p2.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class="logo" src="LOGO.jpg" alt="">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <img src="img1.jpg" alt="Business">
+      <div class="carousel-caption">
+        <h3>Grow Your Business With Us</h3>
+        <p>Innovative digital solutions for modern companies.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img2.jpg" alt="Technology">
+      <div class="carousel-caption">
+        <h3>Creative & Professional Team</h3>
+        <p>We build websites, apps and digital experiences.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<section id="about" class="section-padding text-center">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>BrightTech Solutions is a professional IT company providing high-quality website development, mobile applications, and digital marketing services. We help businesses grow with modern technology solutions.</p>
+  </div>
+</section>
+
+<section id="services" class="section-padding bg-light text-center">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img src="s1.jpg" class="img-responsive" style="width:100%">
+        <h4>Website Development</h4>
+        <p>Responsive and professional websites for your business.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="s2.jpg" class="img-responsive" style="width:100%">
+        <h4>Mobile App Development</h4>
+        <p>Android & iOS apps with modern UI and smooth performance.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="s3.jpg" class="img-responsive" style="width:100%">
+        <h4>Digital Marketing</h4>
+        <p>SEO, Social Media Marketing and Branding solutions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-padding text-center">
+  <div class="container">
+    <h2>Our Projects</h2>
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img src="p1.jpg" class="img-responsive">
+        <p>E-commerce Website</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="p2.jpg" class="img-responsive">
+        <p>Business Dashboard</p>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="p3.jpg" class="img-responsive">
+        <p>Startup Branding</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="container">
+    <p>© 2026 BrightTech Solutions | All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
